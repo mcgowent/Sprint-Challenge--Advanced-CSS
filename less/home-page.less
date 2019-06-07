@@ -3,15 +3,18 @@
 .home {
 
   .intro {
+    img {
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -43,8 +46,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(row, center);
 
     .walk-text {
       width: 50%;
@@ -58,13 +60,15 @@
       }
 
       .btn {
+
+        .button(@btn-bg-color, @wild-sand)
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +76,6 @@
       }
     }
   }
-}// home
+}
+
+// home
